@@ -57,7 +57,7 @@
          <span class="navbar-toggler-icon"></span>
          </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ml-auto">
+            <!--<ul class="navbar-nav  ml-auto">
               <li class="nav-item">
                   <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-item text-light" href="#">Home</a>
               </li>
@@ -81,13 +81,13 @@
               </li>-->
 
 
-              <li class="nav-item">
+              <!--<li class="nav-item">
                   <a aria-expanded="false" aria-haspopup="true" class=" nav-link nav-item text-light" href="#"  >Fun@CampusX</a>
               </li>
               <li class="nav-item">
                   <a aria-expanded="false" aria-haspopup="true" class="nav-link nav-item text-light" href="#" role="button" >Build Profile</a>
               </li>
-            </ul>
+            </ul>-->
           </div>
         
       </nav>
@@ -103,7 +103,7 @@
           <div class="col-xl-5 col-lg-6 text-center text-lg-left mb-4 mb-md-5 mb-lg-0 float-right" data-aos="fade-right" style="margin-top:15px">
             <h1 class="display-3">Experience the Future of <br> <mark><span data-typed-text data-loop="true" data-type-speed="200" data-strings='["Education","Engineering","Upskilling"]'></span></mark></h1>
             <p class="lead">Get enrolled in our carefully designed Mentorship Programs and give a boost to your career.</p>
-            <a href="#" class="btn btn-primary">Watch Video</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#video-modal">Watch Video</a>
             <a href="http://classroom.campusx.in/guest_login" target="_blank" class="btn btn-outline-primary btn-light">Experience Dashboard</a>
           </div>
         </div>
@@ -448,20 +448,20 @@
         <div class="row">
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card card-body shadow-sm h-100">
-              <div class="display-4 text-primary mb-3" data-countup data-start="" data-end="97" data-duration="" data-decimal-places="" data-prefix="" data-separator="" data-grouping="" data-suffix="%" data-easing=""></div>
-              <div>Average satisfaction rating received in the past year</div>
+              <div class="display-4 text-primary mb-3" data-countup data-start="" data-end="85" data-duration="" data-decimal-places="" data-prefix="" data-separator="" data-grouping="" data-easing=""></div>
+              <div>Satisfied Students</div>
             </div>
           </div>
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card card-body shadow-sm h-100">
-              <div class="display-4 text-primary mb-3" data-countup data-start="20" data-end="24" data-duration="1" data-decimal-places="" data-prefix="" data-separator="" data-grouping="" data-suffix="/7" data-easing="false"></div>
-              <div>Our support experts are ready to assist anytime</div>
+              <div class="display-4 text-primary mb-3" data-countup data-start="20" data-end="500" data-duration="1" data-decimal-places="" data-prefix="" data-separator="" data-grouping="" data-suffix="+" data-easing="false"></div>
+              <div>Projects and Assignments completed</div>
             </div>
           </div>
           <div class="col-md-4 mb-3 mb-md-0">
             <div class="card card-body shadow-sm h-100">
-              <div class="display-4 text-primary mb-3" data-countup data-start="" data-end="142" data-duration="" data-decimal-places="" data-prefix="" data-separator="" data-grouping="" data-suffix="k+" data-easing=""></div>
-              <div>App installs from the two major mobile app stores</div>
+              <div class="display-4 text-primary mb-3" data-countup data-start="" data-end="15" data-duration="" data-decimal-places="" data-prefix="" data-separator="" data-grouping="" data-suffix="+" data-easing=""></div>
+              <div>Internships bagged</div>
             </div>
           </div>
 
@@ -497,9 +497,9 @@
               <div class="ml-sm-3 ml-md-4">
                 <h5>Student Work</h5>
                 <p>
-                  Enhance the functionality of your site with Jumpstart's convenient suite of easily configurable javascript plugins.
+                  We believe in the philosophy of learning by doing. Hence a lot of learning at CampusX happens while building some complex project.
                 </p>
-                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#project-modal">View Style Guide</button>
+                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#project-modal">View Projects</button>
               </div>
             </div>
           </div>
@@ -509,9 +509,9 @@
               <div class="ml-sm-3 ml-md-4">
                 <h5>Student Blogs</h5>
                 <p>
-                  Get your site off the ground quicker with Livereload and SCSS compling using our simple Gulp-powered build process.
+                  We take student feedback very seriously and try to improve on a daily basis. Read how our students feel about our mentorship programs.
                 </p>
-                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#blog-modal">View Style Guide</button>
+                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#blog-modal">View Reviews</button>
               </div>
             </div>
           </div>
@@ -537,7 +537,6 @@
         <div class="row section-title justify-content-center text-center">
           <div class="col-md-9 col-lg-8 col-xl-7">
             <h3 class="display-4">FAQ</h3>
-            <div class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</div>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -546,15 +545,13 @@
               <div class="card mb-2 mb-md-3">
                 <a href="#accordion-1" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="mb-0 mr-2">Can I upgrade later on?</h6>
+                    <h6 class="mb-0 mr-2">How will I clear all of my doubts which I will be having during a video session, everything cannot be written in the comments, right? </h6>
                     <img src="static/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-1" data-parent="#faq-accordion">
                   <div class="px-3 px-md-4 pb-3 pb-md-4">
-                    Integer ut Oberyn massa. Sed feugiat vitae turpis a porta. Aliquam sagittis interdum Melisandre. Vivamus ornare pharetra diam sit amet tincidunt. Eunuch sit amet pharetra odio. Vivamus in tempor ipsum, sit amet elementum neque. Sed faucibus posuere pharetra.
-                    In imperdiet eleifend dui a aliquet. Aliquam imperdiet Tyrion purus vitae rutrum. Donec eu commodo nunc. Mauris dignissim lectus massa, eget cursus quam mollis id. Eddard sit amet ex Jon nibh maximus cursus at vitae mi. Duis tincidunt
-                    aliquam mi sed sagittis.
+                    You will be able to contact your mentor over phone or Whatsapp.
 
                   </div>
                 </div>
@@ -562,14 +559,18 @@
               <div class="card mb-2 mb-md-3">
                 <a href="#accordion-2" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="mb-0 mr-2">Can I port my data from another provider?</h6>
+                    <h6 class="mb-0 mr-2">How will the mentorship programme help the students build their portfolios? </h6>
                     <img src="static/assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-2" data-parent="#faq-accordion">
                   <div class="px-3 px-md-4 pb-3 pb-md-4">
-                    Eunuch nec dapibus ex. Aenean placerat, ex imp convallis dictum, ex nulla rutrum justo, Jon lobortis nisi ex at leo. Sed Tyrion aliquet sem vel pharetra. Vestibulum ante ipsum primis in faucibus Hodor luctus et ultrices posuere cubilia Curae; Class aptent
-                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis a sapien quis quam auctor feugiat. Donec volutpat condimentum risus, eu iaculis nibh dapibus eu.
+                    We will focus mainly on the following parts of your personal brand:<br>
+1. Resume and Cover Letter<Br>
+2. Linkedin<br>
+3. Github/Kaggle<Br>
+4. Medium/Quora/YouTube<br>
+Whatever you learn or do during this programme will be documented in one or more of the above platforms. Apart from that, the mentor will personally review each of these profiles and make necessary changes.
 
                   </div>
                 </div>
@@ -577,14 +578,13 @@
               <div class="card mb-2 mb-md-3">
                 <a href="#accordion-3" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="mb-0 mr-2">Are my food photos stored forever in the cloud?</h6>
+                    <h6 class="mb-0 mr-2">What will be the duration of the mentorship program?</h6>
                     <img src="static/assets/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-3" data-parent="#faq-accordion">
                   <div class="px-3 px-md-4 pb-3 pb-md-4">
-                    Volantisi fringilla, unuch eu sagittis sagittis, urna Loras luctus odio, vitae hendrerit massa dui ac est. Donec leo tortor, Tyrion et aliquet at, convallis imp mi. Vivamus turpis diam, ultrices et tempus quis, sollicitudin et risus. Pellentesque nec
-                    sapien imp dolor condimentum condimentum ut sed neque. Integer efficitur accumsan risus, vitae posuere massa aliquam at.
+                    22-24 Weeks
 
                   </div>
                 </div>
@@ -592,14 +592,13 @@
               <div class="card mb-2 mb-md-3">
                 <a href="#accordion-4" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="mb-0 mr-2">Who foots the bill for that?</h6>
+                    <h6 class="mb-0 mr-2">What is the program fee?</h6>
                     <img src="static/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-4" data-parent="#faq-accordion">
                   <div class="px-3 px-md-4 pb-3 pb-md-4">
-                    Khaleesi ornare pharetra diam sit amet tincidunt. Eunuch sit amet pharetra odio. Vivamus in tempor ipsum, sit amet elementum neque. Sed faucibus posuere pharetra. In imperdiet eleifend dui a aliquet. Aliquam imperdiet Tyrion purus vitae rutrum. Donec
-                    eu commodo nunc. Vivamus Melisandre Jon lorem eget bibendum. Sed tincidunt sed enim at dignissim. Mauris erat diam, lacinia eget efficitur et, iaculis sed augue.
+                    It follows a monthly subscription plan of Rs 1500/month.
 
                   </div>
                 </div>
@@ -607,28 +606,26 @@
               <div class="card mb-2 mb-md-3">
                 <a href="#accordion-5" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="mb-0 mr-2">What's the real cost?</h6>
+                    <h6 class="mb-0 mr-2">How many students will be there in a single batch?</h6>
                     <img src="static/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-5" data-parent="#faq-accordion">
                   <div class="px-3 px-md-4 pb-3 pb-md-4">
-                    Brienne ac maximus Loras, eu placerat odio. Etiam vestibulum Loras et sollicitudin pellentesque. Mauris sed Tyrion Varys. Curabitur posuere augue risus, eget mollis unuch consectetur quis. Vestibulum accumsan congue risus, in semper eros interdum id.
-                    Tincidunt vitae libero efficitur viverra. Integer venenatis massa in dui viverra fermentum. Eunuch fringilla arcu ac urna sodales fermentum. Ut luctus enim ut sagittis consectetur.
-
+                    20-25 students/batch
                   </div>
                 </div>
               </div>
               <div class="card mb-2 mb-md-3">
                 <a href="#accordion-6" data-toggle="collapse" role="button" aria-expanded="false" class="p-3 p-md-4">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h6 class="mb-0 mr-2">Can my company request a custom plan?</h6>
+                    <h6 class="mb-0 mr-2">Will we get internships as well?</h6>
                     <img src="static/img/icons/interface/icon-caret-right.svg" alt="Caret Right" class="icon icon-sm" data-inject-svg>
                   </div>
                 </a>
                 <div class="collapse" id="accordion-6" data-parent="#faq-accordion">
                   <div class="px-3 px-md-4 pb-3 pb-md-4">
-                    Brienne ac maximus Loras, eu placerat odio. Etiam vestibulum Loras et sollicitudin pellentesque. Mauris sed Tyrion Varys. Curabitur posuere augue risus, eget mollis unuch consectetur quis. Vestibulum accumsan congue risus, in semper eros interdum id.
+                    Yes, you will definitely  get an internship, given that your performance is not below par. 
 
                   </div>
                 </div>
@@ -639,8 +636,7 @@
         </div>
         <div class="row justify-content-center mt-4 mt-md-5">
           <div class="col-auto">
-            <div class="alert bg-light">Still have unanswered questions? <a href="#">Get
-                        in touch</a>
+            <div class="alert bg-light">Still have unanswered questions? <a href="#">You can Whatsapp us on 8420166148</a>
             </div>
           </div>
         </div>
@@ -679,22 +675,25 @@
     </div>
 
     <div class="modal fade" id="project-modal" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="projectModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">
-                <img src="assets/img/icons/interface/icon-x.svg" alt="Icon">
-              </span>
-            </button>
+            <h5 class="modal-title" id="projectModalLabel">Student Work</h5>
           </div>
           <div class="modal-body">
-            ...
+            <ul>
+              <li>Check out the <a href="https://drive.google.com/file/d/1Gq_7U4l3CpDmjsFp6u1kjP_GkxIxgcpv/view?usp=sharing" target="_blank">Self Driving Car</a> project by Sutirtha Saha</li>
+              <li class="mt-3">Check out this <a href="https://covid-dashboard-19.herokuapp.com/" target="_blank">Covid-19 dashboard</a> made by Alekhyo Banerjee</li>
+              <li class="mt-3">Check out the <a href="https://drive.google.com/file/d/1xCQRCT275ODwKRvOuPF8CvMpY1En2ZB1/view?usp=sharing" target="_blank">Handwriting recognizer</a> app by Suman Kumar Suman</li>
+              <li class="mt-3">Check out <a href="https://sampemailclassifier.herokuapp.com/" target="_blank">Email Spam classifer</a> project by our student Shruti Kumari</li>
+              <li class="mt-3">Check out the <a href="http://movierecommends.herokuapp.com/" target="_blank">Movie Recommender System</a> project by Suman Kuman Suman</li>
+              <li class="mt-3">Check out the <a href="https://imdb-movie-review-sentiments.herokuapp.com/" target="_blank">Movie Review sentiment Analysis</a> Project by Rajtilak Pal</li>
+              <li class="mt-3">Check out the <a href="https://jquery-news-app1.herokuapp.com/" target="_blank">News Aggregation Web Application</a> by Sankha Subhra Mondal</li>
+              <li class="mt-3">Reserved space for your next big project:)</li>
+            </ul>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -704,19 +703,23 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="blogModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">
-                <img src="assets/img/icons/interface/icon-x.svg" alt="Icon">
-              </span>
-            </button>
+            <h5 class="modal-title" id="blogModalLabel">Blogs by our students</h5>
           </div>
           <div class="modal-body">
-            ...
+            <ul>
+              <li><a href="https://medium.com/campusx/machine-learning-from-a-5-year-old-perspective-93278fbf73ce" target="_blank">Machine Learning: From a 5-year old’s perspective</a> by Purbita Sur</li>
+              <li class="mt-3"><a href="https://medium.com/campusx/exploring-the-mystery-behind-different-job-titles-for-machine-learning-and-data-science-9352849f283a" target="_blank">Exploring the Mystery Behind Different Job Titles for Machine Learning and Data Science</a> by Kunal Gohrani</li>
+              <li class="mt-3"><a href="https://medium.com/@sarkarchandrima12/the-data-analysis-process-3ab87e84ddb" target="_blank">The Data Analysis Process</a> by Chandrima Sarkar</li>
+              <li class="mt-3"><a href="https://levelup.gitconnected.com/role-of-mathematics-in-machine-learning-496a6ffcc442" target="_blank">Role of Mathematics in Machine Learning</a> by Rajtilak Pal</li>
+              <li class="mt-3"><a href="https://medium.com/campusx/data-analysis-countries-of-the-world-a795077b7679" target="_blank">Data Analysis: Countries of the World</a> by Surabhi Basak</li>
+              <li class="mt-3"><a href="https://medium.com/@kunal_gohrani/the-future-of-software-industry-a-look-into-the-current-trends-d9289b3f2e77" target="_blank">The Future of Software industry: A look into the Current Trends</a> by Kunal Gohrani</li>
+              <li class="mt-3"><a href="https://medium.com/@purbita1998/an-in-depth-analysis-of-the-indian-startup-funding-f8ed3e31633e" target="_blank">An in-depth analysis of the Indian Startup Funding</a> by Purbita Sur</li>
+              <li class="mt-3"><a href="https://medium.com/@kunal_gohrani/different-types-of-distance-metrics-used-in-machine-learning-e9928c5e26c7" target="_blank">Different Types of Distance Metrics used in Machine Learning</a> by Kunal Gohrani
+</li>
+            </ul>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
@@ -726,19 +729,42 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="testimonialModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">
-                <img src="assets/img/icons/interface/icon-x.svg" alt="Icon">
-              </span>
-            </button>
+            <h5 class="modal-title" id="testimonialModalLabel">Testimonials</h5>
           </div>
           <div class="modal-body">
-            ...
+            <ul>
+              <li>"For an under confident student who was unsure of her career, CampusX has definitely been a boon. With it's extremely well curated courses and an environment that keeps the hype up, CampusX does more than just train us : it brings the best out of each student. Tutored by an excellent mentor who focuses on one-to-one interactions, CampusX is not just an organization - it's one whole family." - <b>Balaka Biswas</b></li><hr>
+              <li class="mt-3">"My journey with CampusX has been truly exceptional. It has helped me gain so much knowledge in the field of Data Science. I started out as a complete beginner in Data Science, but now I participate in Data Science competitions and have managed to gain a respectable rank in them. 
+Its learning by doing methodology helps students understand the concepts behind Machine Learning Algorithms, and also allows them to apply their newly gained knowledge to projects.
+CampusX not only helps you in gaining the technical skills, but also makes you job ready by helping you in developing your professional profile over the period of the course." - <b>Kunal Gohrani</b></li><hr>
+              <li>"CampusX has been an amazing journey, I have learnt so much and enjoyed a lot during the whole course. The teaching process is so good that you can easily get a hang of it and it becomes easy enough to maneuver. I am not only thankful for the offline classes but also the youtube videos which have kept me updated throughout. Along with the theory, the practical applicability of the training is exceptional. The challenges are given to us and the hackathons arranged during the course helped me to get a better grip on the real-world scenarios. CampusX not only provides the particular course's knowledge but also prepares you enough to compete well with the outside world be it for the job or anything else. I would love to pass on the knowledge I have gained and recommend people to take this platform to build their careers." - <b>Ujjainee De</b></li><hr>
+              <li class="mt-3">
+                "A GREAT PLATFORM FOR BEGINNERS 
+I had joined CampusX with very little knowledge. As I spent one year in CampusX, I learnt a lot about my domain (Data Science) and came out with proper knowledge on Data Analysis and Machine Learning. CampusX is a platform that will not only teach you Technical skills, but will also focus on essential skills that are required in any job environment. It also conducts Hackathons so that one can put their skills to the test. Therefore, I believe it is a great platform to start your journey as an engineer." - <b>Purbita Sur</b> 
+              </li><hr>
+              <li class="mt-3">
+                "It's really good for anyone who wants to study in a innovative and exciting way . if you are a student who wants to develop his programming skills and learn new things, this is the right place . best part about it is .. it's friendly environment where one doesn't feel any pressure and everything goes on in smooth planned way .. Recommended ✌️" - <b>Prasoon Thakur</b>
+              </li><hr>
+              <li class="mt-3">
+                "In a scale of 5 I'll definitely give it 5 if not more. An healthy environment where you will get super friendly mentors who will guide you to grabb the latest technology.
+It's been an year since I'm undergoing a training here and I never felt left out or over burdened.
+
+I loved the way how campusX guides us through the latest technology." - <b>Sharika Anjum Mondal</b>
+              </li>
+            </ul>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="video-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog model-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/d6DHAJGuiBk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -751,22 +777,22 @@
             <h5>Social Media Links</h5>
             <ul class="nav flex-row flex-md-column">
               <li class="nav-item mr-3 mr-md-0">
-                <a href="landing-1.html" class="nav-link fade-page px-0 py-2">YouTube</a>
+                <a href="https://www.youtube.com/channel/UCCWi3hpnq_Pe03nGxuS7isg" class="nav-link fade-page px-0 py-2">YouTube</a>
               </li>
               <li class="nav-item mr-3 mr-md-0">
-                <a href="landing-2.html" class="nav-link fade-page px-0 py-2">Facebook</a>
+                <a href="https://www.facebook.com/campusx.official/" class="nav-link fade-page px-0 py-2">Facebook</a>
               </li>
               <li class="nav-item mr-3 mr-md-0">
-                <a href="landing-3.html" class="nav-link fade-page px-0 py-2">Instagram</a>
+                <a href="http://instagram.com/campusx.official" class="nav-link fade-page px-0 py-2">Instagram</a>
               </li>
               <li class="nav-item mr-3 mr-md-0">
-                <a href="landing-4.html" class="nav-link fade-page px-0 py-2">Medium</a>
+                <a href="https://medium.com/campusx" class="nav-link fade-page px-0 py-2">Medium</a>
               </li>
               <li class="nav-item mr-3 mr-md-0">
-                <a href="landing-5.html" class="nav-link fade-page px-0 py-2">Linkedin</a>
+                <a href="https://www.linkedin.com/company/13204711" class="nav-link fade-page px-0 py-2">Linkedin</a>
               </li>
               <li class="nav-item mr-3 mr-md-0">
-                <a href="landing-6.html" class="nav-link fade-page px-0 py-2">Github</a>
+                <a href="https://github.com/campusx-official" class="nav-link fade-page px-0 py-2">Github</a>
               </li>
             </ul>
           </div>
