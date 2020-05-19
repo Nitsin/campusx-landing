@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 
@@ -12,13 +13,12 @@
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <!-- Our Custom CSS -->
-    <link rel="stylesheet" href="/static/css/new.css">
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <link href="/static/css/theme.min.css" rel="stylesheet" type="text/css" media="all" />
-     <link rel="stylesheet" type="text/css" href="/static/css/menu.css">
     <link rel="stylesheet" href="/static/css/dashboard.css">
+
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
@@ -31,37 +31,40 @@
   
     <div class="wrapper">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-3 fixed-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-3 fixed-top" style="height:60px">
             <div class="container-fluid">
-                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary btn-sm">
                     <i class="fas fa-align-left"></i>
                 </button>
 
-                <a class="navbar-brand navbar-brand-dynamic-color fade-page btn btn-primary" href="index-2.html" style="margin-right:90%;">
-                    Campus{X}
+                <a class="navbar-brand navbar-brand-dynamic-color float-left" href="index-2.html" style="margin-left: 30px">
+                    CAMPUS{X}
                 </a>
             </div>
         </nav>
 
+
+
         <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div id="dismiss" style="margin-top: 70px">
-                <i class="fas fa-arrow-left" style="margin-top:5px"></i>
+        <nav id="sidebar" class="bg-primary">
+            <div id="dismiss" style="margin-top: 60px">
+                <i class="fas fa-arrow-left mt-1 bg-primary text-light" style="margin-top:5px"></i>
             </div>
 
-            <div class="sidebar-header" style="margin-top: 70px">
-                <h3 style="color:#fff">Bootstrap Sidebar</h3>
+            <div class="sidebar-header ml-1 bg-primary" style="margin-top:60px;" >
+                <h3 style="color:#fff">Hi Nitish</h3>
             </div>
 
             <ul class="list-unstyled components">
                 <p>Dummy Heading</p>
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <a class="bg-primary-2" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a href="#">Home 1</a>
                         </li>
-                        <li>
+                        <li >
                             <a href="#">Home 2</a>
                         </li>
                         <li>
@@ -97,7 +100,7 @@
         <!-- Page Content  -->
     
 
-    <div class="container">
+    <div>
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 Why do we use it?
