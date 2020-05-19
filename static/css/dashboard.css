@@ -25,7 +25,7 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
+    padding: 15px 0px;
     background: #fff;
     border: none;
     border-radius: 0;
@@ -37,6 +37,9 @@ a:focus {
     box-shadow: none;
     outline: none !important;
     border: none;
+}
+.wrapper .navbar a{
+    margin-right:90%;
 }
 
 .line {
@@ -53,11 +56,11 @@ a:focus {
 #sidebar {
     width: 250px;
     position: fixed;
-    top: 0;
+    top:0px;
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background:#7386D5;
     color: #fff;
     transition: all 0.3s;
     overflow-y: scroll;
@@ -74,13 +77,17 @@ a:focus {
     line-height: 35px;
     text-align: center;
     background: #7386D5;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position:absolute;
+    top:20px;
+    right:15px;
     cursor: pointer;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+}
+#dismiss .fas {
+    margin-top:15px;
+
 }
 
 #dismiss:hover {
@@ -106,6 +113,7 @@ a:focus {
 #sidebar .sidebar-header {
     padding: 20px;
     background: #6d7fcc;
+    color:#fff;
 }
 
 #sidebar ul.components {
