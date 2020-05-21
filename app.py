@@ -11,6 +11,10 @@ def home():
 def dashboard():
     return render_template('dashboard.html')
 
+@app.route('/class')
+def myclass():
+    return render_template('myclass.html')
+
 
 
 if __name__=="__main__":

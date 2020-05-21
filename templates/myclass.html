@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar using Bootstrap 4</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <link href="/static/css/theme.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+</head>
+
+<style type="text/css">
+    .jumbo{
+        background-image: url("/static/img/class_bg.jpg");
+        background-size: cover;
+    }
+</style>
+
+<body style="background-color: #f2f2f2">
+
+  
+    <div class="wrapper">
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-3 fixed-top" style="height:60px">
+
+            <button type="button" id="sidebarCollapse" class="btn btn-primary btn-sm">
+                <i class="fas fa-align-left"></i>
+            </button>
+                
+
+            <a class="navbar-brand navbar-brand-dynamic-color" href="index-2.html" style="margin-left: 20px">
+                CAMPUS{X}
+            </a>
+
+                
+        </nav>
+
+
+
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="bg-primary">
+            <div class="bg-light text-primary" id="dismiss" style="margin-top: 60px">
+                <i class="fas fa-arrow-left mt-1" style="margin-top:5px"></i>
+            </div>
+
+            <div class="sidebar-header ml-1 bg-primary" style="margin-top:60px;" >
+                <h3 style="color:#fff">Hi Nitish</h3>
+            </div>
+
+            <ul class="list-unstyled components" style="padding-left: 15px;">
+                <!--<li class="active">
+                    <a class="bg-primary-2" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li >
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>-->
+                <!--<li>
+                    <a href="#">About</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#" class="bg-primary-2">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="bg-primary-2">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#"  class="bg-primary-2">Page 3</a>
+                        </li>
+                    </ul>
+                </li>-->
+                <li>
+                    <a href="#"><i class="fas fa-chart-line"></i>&nbsp&nbsp&nbspDashboard</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-hourglass"></i>&nbsp&nbsp&nbspTimeline</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-book-open"></i>&nbsp&nbsp&nbspMy Courses</a>
+                </li>
+                <li class="active">
+                    <a href="#"><i class="fas fa-users"></i>&nbsp&nbsp&nbspMy Class</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-dice"></i>&nbsp&nbsp&nbspFun-cards</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled" style="padding-left: 15px;">
+                <li>
+                    <a href="#"><i class="fas fa-user"></i>&nbsp&nbsp&nbspMy Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i>&nbsp&nbsp&nbspLogout</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    
+
+    <div class="container">
+        <div class="jumbo jumbotron bg-white text-white" style="margin-top: 60px">
+            <h1 class="display-4" style="margin-top: -20px">KolMLB#3</h1>
+            <p class="lead text-white" style="margin-bottom: -20px">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card" style="padding: -20px">
+                            <div class="card-body">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="float-left">
+                                            <h6>Your Classmates</h6>
+                                        </div>
+                                        <div class="float-right">
+                                            <a href="#" class="pull-left inline-block mr-15">
+                                                <i class="fas fa-arrow-left"></i>
+                                            </a>
+                                            <a href="#" class="pull-left inline-block close-panel" data-effect="fadeOut">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <div class="panel-wrapper">
+                                        <div class="panel-body row">
+                                            <div class="table-wrap sm-data-box-2">
+                                                <div class="table-responsive">
+                                                    <table  class="table  top-countries mb-0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="https://f0.pngfuel.com/png/229/988/boy-carrying-backpack-walking-illustration-cartoon-student-school-child-student-png-clip-art.png" alt="country" style="width: 30px;height: 30px">    
+                                                                    <span>Alekyo Banerjee</span>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="https://f0.pngfuel.com/png/229/988/boy-carrying-backpack-walking-illustration-cartoon-student-school-child-student-png-clip-art.png" alt="country" style="width: 30px;height: 30px">    
+                                                                    <span>Alekyo Banerjee</span>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="https://f0.pngfuel.com/png/229/988/boy-carrying-backpack-walking-illustration-cartoon-student-school-child-student-png-clip-art.png" alt="country" style="width: 30px;height: 30px">    
+                                                                    <span>Alekyo Banerjee</span>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="https://f0.pngfuel.com/png/229/988/boy-carrying-backpack-walking-illustration-cartoon-student-school-child-student-png-clip-art.png" alt="country" style="width: 30px;height: 30px">    
+                                                                    <span>Alekyo Banerjee</span>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="https://f0.pngfuel.com/png/229/988/boy-carrying-backpack-walking-illustration-cartoon-student-school-child-student-png-clip-art.png" alt="country" style="width: 30px;height: 30px">    
+                                                                    <span>Alekyo Banerjee</span>
+                                                                </td>
+                                                            </tr>
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Know your classmates</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>Create Feed</h5>
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5>Feed #1</h5>
+                                <img src="/static/img/blog.png" class="card-img-top">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Ticker</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3>Class Stats</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+</body>
+
+</html>
